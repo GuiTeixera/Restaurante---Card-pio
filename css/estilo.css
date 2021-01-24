@@ -1,0 +1,90 @@
+body { /*personalizando o corpo da pagina*/
+	background:#202020; /*cor do fundo da pagina*/
+	font-family: "Alegreya SC"; /*fonte da pagina*/
+}
+
+header{
+	background: url("../img/rest-bg.jpg") no-repeat center center; /*(.. usado para sair da pasta e poder acessar outra)
+	para colocar a imagem no fundo da pagina*/
+	background-size: cover;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 300px;
+	
+}
+.titulo{ /*criando classe*/
+	color:#fff; /*cor da fonte do h1*/
+	font-size: 2em; /*fonte da classe que vai usar no h1*/
+	text-align: center; /*alinhamento do texto*/
+	text-transform: uppercase; /*letra maiuscula*/
+	border-top: 2px solid #fff; /*tamanho da borda de cima e cor */
+	border-bottom: 2px solid #fff; /*tamanho da fonte de baixo e cor*/
+	padding: 10px 0 10px 0; /*espaco da borda e o texto a sequencia no sentido horario*/
+	letter-spacing: .1em; /*espaço entre as letras */
+	margin:0 0 0 20px; /*espaco do topo e a borda*/
+}
+.menu-item{
+	text-align:right; /*escrever da direita para a esquerda*/	
+}
+.menu-item h2{ /*so vai pegar os itens que esta dentro da div do h2 menu-item*/
+	font-size: 2.25em; /*tamanho da fonte */
+	color:#f17060; /*cor da fonte */
+	/*padding: 0px 100px 10px 0px;*/ /*espaço da borda e o texto a sequencia no sentido horario*/
+	border-bottom: 1px dashed #373532; /*tamanho da borda de baixo e o formato dela com a cor*/
+}
+.menu-item h3{
+	font-size: 1.125em; /*tamanho da fonte*/
+	color: #fff; /*cor da fonte*/
+	margin-bottom: 5px; /*espaço da borda de baixo com o texto*/
+}
+.menu-item p{
+	font-family: georgia; /*qual é a fonte usada*/
+	font-style: italic; /*tipo da fonte*/
+	font-size: 0.875em; /*tamanho da fonte*/
+	line-height: 1.4em;/* altura da linha*/ 
+	color: #787367; /*cor da fonte*/
+}
+.menu-item span{ /*mexendo em tudo que esta dentro do span*/
+	font-size: 1.5em; /*tamanho da fonte*/
+	display: block; /*é para o display ficar em bloco e não em linha*/
+	width: 100px; /*para dimensionar a largura da linha do span */
+	color: #fff; /*cor da fonte*/
+	float: right; /*flutuar a direita ou a esquerda*/
+}
+.menu-item li{ /*mexendo em tudo que esta dentro da li*/
+	clear: both; /* é como se anulasse o float, limpa para nao flutuar o que estava fluando em cima*/
+	padding: 15px 0px 15px 0px; /*espaço da borda e o texto na sequencia do sentido horario*/
+	border-bottom: 1px dashed #373532; /* tamanho da borda de baixo e o formato dela com a cor*/
+	overflow: hidden; /* Efeito ao passar o mouse nos itens*/
+	list-style-type: none; /*so para tirar as bolinhas */
+}
+.menu-item li:hover{ /*para dar efeito nos itens escritos*/
+	background-color: #131313; /* para dar efeito quando passar o mouse a cor do fundo da lista */
+	font-size: 110%; /*para dar efeito ao tamanho da fonte*/
+}
+
+.menu-item div{
+	float: right; /*fixa para a direita */
+	max-width: 290px; /*limite da largura*/
+}
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (min-width: 768px) {
+  a {color: yellow;}
+}
+
+/* 
+ Com uma largura mínima de 992 pixels. Monitores por exemplo.
+*/
+@media screen and (min-width: 992px) {
+  a {color: green;}
+}
+
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (min-width: 1200px) {
+  a {color: black;}
+}

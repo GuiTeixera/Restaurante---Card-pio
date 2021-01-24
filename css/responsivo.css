@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+	.menu-item h3{
+		padding-top: 15px
+	text-align: 1.125em; /*tamanho da fonte*/
+	color: #fff; /*cor da fonte*/
+	margin-bottom: 5px; /*espaço da borda de baixo com o texto*/
+	text-align: left; /*alinhar o texto para a esquerda*/
+	}
+	header{
+	background: url("../img/rest-bg-mobile.jpg") no-repeat center center; /*(.. usado para sair da pasta e poder acessar outra)
+	para colocar a imagem no fundo da pagina*/
+	padding-bottom: 20px;
+}
+.titulo{
+	color: #fff;
+}
+	
+}
